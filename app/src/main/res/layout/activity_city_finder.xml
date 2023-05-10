@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242343"
+    tools:context=".cityFinder">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/left"
+        android:id="@+id/backButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imagepogoda"
+        android:layout_width="146dp"
+        android:layout_height="136dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginTop="182dp"
+        android:gravity="center"
+        android:src="@drawable/sunny">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/searchCity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edittextdesign"
+        android:gravity="center_vertical|center_horizontal"
+        android:hint="Введіть місто"
+        android:imeOptions="actionGo"
+        android:inputType="textAutoCorrect"
+        android:textColor="@color/black"
+        android:textColorHint="#78909C"
+        android:textSize="20sp"
+        tools:ignore="TouchTargetSizeCheck">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="400dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Розробив студент\nГр. КІт-212\nЛапигін М.І."
+        android:textColor="#C1FFFF"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Додаток API-погоди"
+        android:textColor="#C1FFFF"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
